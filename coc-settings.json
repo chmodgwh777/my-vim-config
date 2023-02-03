@@ -1,0 +1,153 @@
+{
+    "codeLens.position": "eol",
+    "coc.preferences.promptInput": true,
+    "coc.preferences.enableFloatHighlight": true,
+    "coc.preferences.snippetStatusText": "Ⓢ ",
+    "coc.preferences.extensionUpdateCheck": "daily",
+    "coc.preferences.messageLevel": "error",
+    "coc.source.around.firstMatch": false,
+    "coc.source.buffer.firstMatch": false,
+    "suggest.detailMaxLength": 60,
+    "suggest.noselect": false,
+    "suggest.enablePreselect": true,
+    "suggest.triggerAfterInsertEnter": true,
+    "suggest.autoTrigger": "always",
+    "suggest.timeout": 5000,
+    "suggest.enablePreview": true,
+    "suggest.floatEnable": true,
+    "suggest.detailField": "preview",
+    "suggest.snippetIndicator": "",
+    "suggest.triggerCompletionWait": 100,
+    "suggest.echodocSupport": true,
+    "suggest.completionItemKindLabels": {
+      "class": "\uf0e8",
+      "color": "\ue22b",
+      "constant": "\uf8fe",
+      "default": "\uf29c",
+      "enum": "\uf435",
+      "enumMember": "\uf02b",
+      "event": "\ufacd",
+      "field": "\uf93d",
+      "file": "\uf723",
+      "folder": "\uf115",
+      "function": "\u0192",
+      "interface": "\uf417",
+      "keyword": "\uf1de",
+      "method": "\uf6a6",
+      "module": "\uf40d",
+      "operator": "\uf915",
+      "property": "\ue624",
+      "reference": "\ufa46",
+      "snippet": "\ue60b",
+      "struct": "\ufb44",
+      "text": "\ue612",
+      "typeParameter": "\uf728",
+      "unit": "\uf475",
+      "value": "\uf89f",
+      "variable": "\ue71b"
+    },
+    "diagnostic.errorSign": "\uf467",
+    "diagnostic.warningSign": "\uf071",
+    "diagnostic.infoSign": "\uf129",
+    "diagnostic.hintSign": "\uf864",
+    "diagnostic.displayByAle": false,
+    "diagnostic.refreshOnInsertMode": false,
+    "diagnostic.checkCurrentLine": true,
+    "diagnostic.virtualTextPrefix": " ❯❯❯ ",
+    "diagnostic.virtualText": true,
+    "codeLens.enable": true,
+    "list.previewHighlightGroup": "Statement",
+    "list.nextKeymap": "<C-e>",
+    "list.previousKeymap": "<C-u>",
+    "snippets.ultisnips.directories": [
+        "$HOME/.config/nvim/Ultisnips/",
+        "$HOME/.config/nvim/plugged/vim-snippets/UltiSnips/"
+    ],
+    "prettier.tabWidth": 4,
+    "coc.preferences.formatOnSaveFiletypes": [
+        //"javascript",
+        //"typescript",
+        //"html",
+        //"css",
+        //"haskell",
+        // "json",
+        // "cpp",
+        // "c",
+        //"python"
+    ],
+    "yaml.format.enable": true,
+    "signature.target": "float",
+    "yank.enableCompletion": false,
+    "explorer.width": 30,
+    "explorer.quitOnOpen": true,
+    "explorer.sources": [
+        {
+            "name": "buffer",
+            "expand": false
+        },
+        {
+            "name": "file",
+            "expand": true
+        }
+    ],
+    "explorer.file.column.indent.indentLine": true,
+    "explorer.file.showHiddenFiles": true,
+    "explorer.icon.enableNerdfont": true,
+    "explorer.buffer.showHiddenBuffers": false,
+
+    "coc.preferences.rootPatterns": [".root", ".git/", ".hg/", ".gitignore"],
+
+    "rust-analyzer.server.path": "/home/gao/.cargo/bin/rust-analyzer",
+
+    // "clangd.fallbackFlags": ["-std=c++17"],
+    "semanticTokens.filetypes": ["*"],
+
+    "languageserver": {
+        "bash": {
+            "command": "bash-language-server",
+            "args": ["start"],
+            "filetypes": ["sh", "ebuild"],
+            "ignoredRootPaths": ["~"]
+        },
+        //"ccls": {
+        //    "command": "ccls",
+        //    "filetypes": ["c", "cc", "cpp", "c++"],
+        //    "rootPatterns": [
+        //        ".ccls",
+        //        "compile_commands.json",
+        //        ".git/",
+        //        ".hg/",
+        //        ".root"
+        //    ],
+        //    "initializationOptions": {
+        //        "cache": {
+        //            "directory": "/tmp/ccls"
+        //        },
+        //        //"clang": {
+        //        //    "extraArgs": ["-std=c++17"]
+        //        //},
+        //        "highlight": { "lsRanges": true }
+        //    }
+        //},
+        "haskell": {
+            "command": "haskell-language-server-wrapper",
+            "args": ["--lsp"],
+            "rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml"],
+            "filetypes": ["haskell", "lhaskell"],
+            "initializationOptions": {
+                "haskell": {
+                    "hlintOn": true,
+                    "formattingProvider": "stylish-haskell"
+                }
+            }
+        },
+        "golang": {
+            "command": "gopls",
+            "rootPatterns": ["go.mod"],
+            "filetypes": ["go"]
+        }
+    },
+    "Lua.telemetry.enable": false,
+    "snippets.ultisnips.pythonPrompt": false
+}
+
